@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=DM+Serif+Display:ital@0;1&display=swap');
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem; 
+  min-height: 100vh;
+  gap: 100px;
+}
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  padding: 0 2rem; 
+  text-align: center; 
+}
+.topSec{
+  position: relative;
+}
+.topSec h1 {
+  font-size: 5rem;
+  text-align: start;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.topSec h1 svg{
+  color: rgb(250, 28, 28);
+  vertical-align: middle;
+}
+.topSec p {
+  max-width: 350px;
+  position: absolute;
+  right: 0;
+  top: 60%;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.buttomSec {
+  flex: 1;
+  display: flex;
+}
+
+.buttomSec .leftSec {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 1px solid #888;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #f0f0f0;
+
+}
+
+.buttomSec .leftSec img {
+  padding: 10px;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+}
+
+.buttomSec .middleSec {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #f0f0f0;
+  border: 1px solid #888;
+  border-top: none; border-right: none; border-left: none;
+}
+
+.middleSec div{
+  display: grid;
+  padding: 10px;
+  gap: 10px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid #888;
+  border-top: none;
+  z-index: 2;
+
+}
+.middleSec div button{
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 1px solid #888;
+  font-size: 20px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+.middleSec div button svg {
+  margin-left: 5px; 
+}
+.middleSec div button:nth-child(1){
+  background-color: black;
+  color: white;
+}
+
+.buttomSec .middleSec img {
+  width: 100%;
+  height: 50%; 
+  object-fit: cover;
+  padding: 10px;
+}
+
+.buttomSec .rightSec {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  background-color: #f0f0f0;
+  border: 1px solid #888;
+  border-left: none;
+  border-radius:0 5px 5px 0;
+  position: relative;
+}
+ .rightSec img{
+  padding: 10px;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; 
+ }
+ .rightSec div {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.rightSec div span {
+  background-color: #f0f0f0;
+  border: 1px solid #888;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; 
+  margin:  5px;
+  font-size: 20px;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.rightSec div span:nth-child(1){
+  width: 70%;
+  height: 20%;
+}
+.rightSec div span:nth-child(2){
+  width: 10%;
+  height: 10%;
+}
+.rightSec div span:nth-child(3){
+  width: 50%;
+  height: 10%;
+}
+.rightSec div span:nth-child(4){
+  width: 30%;
+  height: 20%;
+}
+.rightSec div span:nth-child(5){
+  width: 70%;
+  height: 20%;
+}
+
+.content {
+  width: 100%;
+  height: 80vh;
+  background-color: #f8f9fa; 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position:  relative;
+  overflow: hidden;
+  gap: 10px;
+}
+.uberText{
+  width: 100%;
+  flex: 1;
+}
+.uberText h1{
+  font-size: 4rem;
+}
+.uberText h1{
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+}
+.uberText P{
+  max-width: 350px;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  font-family: "Bad Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.footerImg{
+  flex: 1;
+  position: relative;
+}
+.footerImg img{
+  object-fit: cover;
+  position: absolute;
+  border-radius: 100px 100px 0 0;
+}
+.footerImg span{
+  position: absolute;
+  top: -50px;
+  left: 30%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  z-index: 2;
+  border-radius: 50%;
+}
+.notFound{
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+.notFound .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin: 10px;
+  color: lightgray;
+  border-radius: 5px;
+}
+.container div:nth-child(1){
+  font-size: 100px;
+  text-align: center;
+}
+.container div:nth-child(2){
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+@media (max-width : 1300px) {
+  .topSec  {
+   height: 20%;
+  }
+  .topSec h1 {
+    font-size: 3rem;
+  }
+  .uberText h1{
+    font-size: 3rem;
+  } 
+}
+@media (max-width : 900px) {
+  .topSec {
+    height: 40%;
+  }
+  .topSec h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .topSec p {
+    top: 40%;
+    right: 30%;
+    max-width: 250px;
+  }
+  .uberText h1{
+    font-size: 2rem;
+  }
+  .uberText p{
+    font-size: 15px;
+  }
+}
+@media (max-width : 550px) {
+  .topSec {
+    height: 50%;
+  }
+  .topSec p {
+    top: 50%;
+    right: 20%;
+    max-width: 200px;
+    font-size: 15px;
+  }
+  .uberText {
+    height: 50%;
+  }
+  .uberText h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .uberText p{
+    font-size: 15px;
+    top: 35%;
+    right: 10%;
+  }
+  .footerImg span{
+    top: 0;
+    left: 0;
+  }
+}
+

@@ -1,0 +1,349 @@
+.credit {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    overflow-y: auto;
+    gap: 10px;
+
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.card {
+    width: 100%;
+    display: flex;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+.card:hover {
+    background-color: #f9f9f9;
+}
+.details {
+    width: 100%;
+    display: grid;
+    padding: 20px;
+}
+.top , .buttom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.top img{
+    position: absolute;
+    filter: grayscale(1);
+    opacity: 0.3;
+    right: 0;
+    z-index: 1;
+    rotate: -30deg;
+}
+.leftDetails, .middleDetails, .rightDetails {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.leftDetails{
+    margin: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.buttons button {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons button:nth-child(1){
+    background-color: red;
+}
+.buttons button:nth-child(2){
+    background-color: lightskyblue;
+}
+.buttons button:hover {
+    box-shadow: inset 5px 10px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+}
+.leftDetails .time span{
+    margin-left: 5px;
+    margin-bottom: 10px ;
+}
+.middleDetails {
+    flex: 1;
+    align-items: center;
+}
+
+.middleDetails h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.empty{
+    text-decoration: line-through red;
+}
+.middleDetails div{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.middleDetails div input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 50%;
+}
+.middleDetails div button{
+    cursor: pointer;
+    border: 1px solid lightskyblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: lightskyblue;
+    background-color: white;
+    margin-left: 5px;
+    transition:  0.3s ease;
+
+}
+.middleDetails div button:hover{
+    background-color: lightskyblue;
+    color: white;
+}
+.middleDetails span {
+    font-size: 24px;
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.middleDetails span:hover {
+    color: #0056b3;
+}
+.rightDetails{
+    align-items: flex-end;
+}
+.rightDetails h3 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.rightDetails span {
+    font-size: 14px;
+}
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .transaction {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transactionTime {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .transactionTime span {
+    font-size: 14px;
+    color: #666;
+  }
+  .transactionAmount {
+    display: flex;
+    align-items: center;
+  }
+  .transactionAmount h2 {
+    font-size: 18px;
+    color: #333;
+    margin-left: 10px;
+  }
+  .transactionAmount p{
+    color: rgb(35, 35, 230);
+  }
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  
+  .deleteConfirmation {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .deleteConfirmation button {
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .deleteConfirmation button:hover {
+    background: #ddd;
+  }
+  .nothing{
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addButton{
+    align-self: center;
+    width: 50px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .addButton:hover{
+    background-color: greenyellow;
+    color: white;
+    border: white;
+  }
+  .addForm{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .addCustomer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 500px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .addCustomer form {
+    display: grid;
+    width: 100%;
+  }
+  
+  .addCustomer input {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  .addCustomerButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .addCustomerButtons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition:  0.3s ;
+}
+.addCustomerButtons button:nth-child(1){
+    background-color: #007bff;
+  }
+  .addCustomerButtons button:nth-child(2){
+    background-color: red;
+    margin-left: 10px;
+  }
+  .addCustomerButtons button:hover {
+    box-shadow:inset 5px 10px 15px 20px rgba(0, 0, 0, 0.2) ;
+  }
+
+  

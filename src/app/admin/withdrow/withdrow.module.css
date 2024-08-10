@@ -1,0 +1,99 @@
+.withdrow {
+    height: 100%;
+    color: rgba(255, 255, 255, 0.95);
+    background-color: #2c3e50;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.textArea {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.textArea .entry {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.entry p {
+    padding: 10px;
+}
+
+.textArea span {
+    color: lightgray;
+    font-size: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.inputsArea {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+}
+
+.inputs input, .inputs textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.inputs textarea::placeholder {
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.deleteButton, .saveButton {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.deleteButton {
+    background-color: red;
+}
+
+.saveButton {
+    background-color: #27ae60;
+}
+
+.withdrow button:hover {
+    box-shadow: inset 0px 5px 5px 20px rgba(0, 0, 0, 0.5);
+}

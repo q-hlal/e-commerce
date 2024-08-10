@@ -1,0 +1,23 @@
+{
+  "name": "shop-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "firebase": "^10.11.1",
+    "html5-qrcode": "^2.3.8",
+    "next": "14.0.3",
+    "qrcode.react": "^3.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.1.0",
+    "recharts": "^2.12.7",
+    "uuidv4": "^6.2.13"
+  }
+}
